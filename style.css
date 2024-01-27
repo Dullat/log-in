@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: rgb(255, 255, 255);
+  font-family: poppins;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.wrapper form {
+  accent-color: green;
+  color: green;
+  --border-color: green;
+}
+.wrapper form h1 {
+  text-align: center;
+}
+.wrapper form ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2.5rem 0;
+  gap: 2.5rem;
+}
+.wrapper form ul li {
+  list-style-type: none;
+  position: relative;
+  top: 0px;
+}
+.wrapper form ul li label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.wrapper form ul li input {
+  width: 17rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  color: green;
+  font-family: poppins;
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+.wrapper form ul li input:focus + label,
+.wrapper form ul li input:hover + label,
+.wrapper form ul li label[up=yes] {
+  transform: translateY(-100%);
+  font-size: 0.7rem;
+}
+.wrapper form ul li .invalid {
+  border-color: red;
+}
+.wrapper form ul [btnLi] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper form ul [btnLi] button {
+  width: 80%;
+  padding: 0.7rem;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.wrapper form ul [btnLi] div {
+  width: 100%;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.wrapper form ul [btnLi] div input {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+.wrapper form ul [btnLi] div label {
+  position: relative;
+  cursor: pointer;
+}
+.wrapper form ul [btnLi] div input:focus + label,
+.wrapper form ul [btnLi] div input:hover + label,
+.wrapper form ul [btnLi] div label[up=yes] {
+  transform: unset;
+  font-size: unset;
+}
+.wrapper .footer {
+  color: green;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.wrapper .footer a {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
