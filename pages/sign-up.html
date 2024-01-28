@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#" method="post">
+            <fieldset class="personal">
+                <legend>Account set-up</legend>
+                <ul>
+                    <li>
+                        <label for="profie-name">Profile-name</label>
+                        <input type="text" id="profile-name" name="profile-name" minlength="4">
+                    </li>
+                    <li>
+                        <label for="user-name">User-name</label>
+                        <input type="text" id="user-name" name="user-name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </li>
+                    <li>
+                        <label for="password-vari">Re-Password</label>
+                        <input type="password" name="password-vari" id="password-vari" required>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="checkbox" name="email-noties" id="email-noties" checked>
+                            <label for="email-noties">email updates</label>
+                            <input type="checkbox" name="email-noties" id="email-noties" style="margin-left: auto;">
+                            <label for="email-noties">Prof-account</label>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="submit">Next</button>
+                    </li>
+                </ul>
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+
+</html>

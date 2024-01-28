@@ -1,0 +1,27 @@
+<fieldset>
+                <legend>for creators and businesses</legend>
+                <ul>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input type="number" name="phone" id="phone" required>
+                    </li>
+                    <li>
+                        <label for="server">Server</label>
+                        <input type="text" name="server" id="server" list="server-suggestion" required>
+                        <datalist id="server-suggestion">
+                            <option value="asia"></option>
+                            <option value="middleEast"></option>
+                            <option value="EU"></option>
+                            <option value="America"></option>
+                        </datalist>
+                    </li>
+                    <li>
+                        <input type="radio" name="account-type" id="account-type">
+                        <label for="creator">Creator</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="account-type" id="account-type">
+                        <label for="business">Business</label>
+                    </li>
+                </ul>
+            </fieldset>
