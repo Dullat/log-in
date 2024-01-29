@@ -23,7 +23,7 @@
                     </li>
                     <li>
                         <label for="user-name">User-name</label>
-                        <input type="text" id="user-name" name="user-name" required>
+                        <input type="text" id="user-name" name="user-name" minlength="4" required>
                     </li>
                     <li>
                         <label for="email">Email</label>
@@ -31,7 +31,7 @@
                     </li>
                     <li>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" minlength="8" required>
                     </li>
                     <li>
                         <label for="password-vari">Re-Password</label>
@@ -41,8 +41,8 @@
                         <div>
                             <input type="checkbox" name="email-noties" id="email-noties" checked>
                             <label for="email-noties">email updates</label>
-                            <input type="checkbox" name="email-noties" id="email-noties" style="margin-left: auto;">
-                            <label for="email-noties">Prof-account</label>
+                            <input type="checkbox" name="type" id="type" style="margin-left: auto;">
+                            <label for="type">Prof-account</label>
                         </div>
                     </li>
                     <li>
@@ -53,6 +53,7 @@
             
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
