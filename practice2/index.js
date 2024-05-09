@@ -4,6 +4,11 @@ const form = document.querySelector("form")
 const btn = document.querySelector("button")
 const errorDiv = document.querySelector(".error")
 
+form.addEventListener("input", (e) => {
+  e.preventDefault()
+  validateInputs()
+})
+
 form.addEventListener("submit", (e) => {
   e.preventDefault()
   validateInputs()
@@ -11,6 +16,13 @@ form.addEventListener("submit", (e) => {
 
 function setError(element, message) {
   errorDiv.textContent = message
+  element.classList.add("errorStyle")
+  element.classList.remove("sucess")
+}
+
+function sucess(element) {
+  element.classList.remove("errorStyle")
+  element.classList.add("sucess")
 }
 
 function validateEmailOrUsername(input) {
@@ -35,11 +47,15 @@ const validateInputs = () => {
     setError(userName, "name is require")
   } else if (!validateEmailOrUsername(uName)) {
     setError(userName, "enter valid user or email")
+  } else {
+    sucess(userName)
   }
 
   if (uPass === "") {
-    setError(userName, "pass is require")
+    setError(password, "pass is require")
   } else if (!validatePassword(uPass)) {
-    setError(uPass, "enter valid passeord format")
+    setError(password, "enter valid passeord format")
+  } else {
+    sucess(password)
   }
 }
